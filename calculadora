@@ -1,0 +1,65 @@
+print ('Operações matematicas:\n1 = Adição\n2 = Subtração\n3 = Multiplicação\n4 = Divisão\n5 = Potencia\n')
+
+acao = input("Escolha uma opção: ")
+
+if acao=='1':
+	print()
+	print("Você escolheu adição!")
+	print()
+	num1 = int(input("Digite um número: "))
+	num2 = int(input("Digite outro número: "))
+	print()
+	resultado = num1+num2
+
+	print(num1, "mais", num2, "é igual á: ", resultado) 
+
+if acao=='2':
+	print()
+	print("Você escolheu subtração!")
+	print()
+	num1 = int(input("Digite um número: "))
+	num2 = int(input("Digite outro número: "))
+
+	resultado = num1-num2
+	print()
+	print(num1, "subtraido por", num2, "é igual á:", resultado)
+
+if acao=='3':
+	print()
+	print("Você escolheu multiplicação!")
+	num1 = int(input("Digite um número: "))
+	num2 = int(input("Digite outro número: "))
+
+	resultado = num1*num2
+
+	print()
+	print(num1, "multiplicado por ", num2, "é: ", resultado )
+
+if acao=='4':
+	print()
+	print("Você escolheu divisão!" )
+	print()
+	num1 = float(input("Digite um número: "))
+	num2 = float(input("Digite outro número: "))
+
+	divisao = num1 / num2
+	resto = num1 % num2
+
+	print( )
+	print(num1, "dividido por", num2, "é igual a:", divisao)
+	print("O resto da divisão entre", num1, "e", num2, " é igual a:", resto)
+
+if acao=='5':
+	print()
+	print("Você escolheu potencia!")
+	print()
+	num1 = int(input("Digite o número a ser potenciado: "))
+	num2 = int(input("Digite a o número que esta acima do número a ser potenciado: "))
+
+	resultado = num1**num2
+
+	print ("O resultado é:", resultado)
+
+else:
+	print()
+	print("O número que você digitou não corresponde a nenhuma operação matematica!")
